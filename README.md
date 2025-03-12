@@ -4,10 +4,10 @@
 The Otello project is an ongoing initiative. It is rooted on three pillars to specifically show:
 
 - How to quickly start with provisioning required ressources, including
-  - Jump starting with the Oracle Cloud
-  - How to set up Oracle OpenJDK on a public (Oracle) cloud system.
+  - How to jump start with [Oracle Cloud](https://www.oracle.com/cloud/)
+  - How to set up [Oracle OpenJDK](https://www.oracle.com/java/technologies/downloads/) on a public (Oracle) cloud system.
   - How to run modern Java versions (17+) on it.
-- A 101 on applied OpenTelemetry: How to perform Jave bytecode instrumentation for observability purposes, including
+- A 101 on applied [OpenTelemetry](https://opentelemetry.io/): How to perform Jave bytecode instrumentation for observability purposes, including
   - How to generate and examine logs from instrumented Java code.
   - How to generate and examine traces from instrumented Java code.
   - How to generate and examine metrics from instrumented Java code.
@@ -18,7 +18,7 @@ The Otello project is an ongoing initiative. It is rooted on three pillars to sp
 This lab is used as:
 - A self-contained starter package for telemetry for students and beginners.
 - A demo kit for interactive meetups and conferences.
-- A sandbox to work on and test modern Java features in relation to telemetry.
+- A sandbox to work on and test modern Java features in conjunction with telemetry.
 
 ## Installation
 
@@ -36,7 +36,7 @@ The demo setup was e.g. tested on Canonical Ubuntu 24.04.
 
 ### Oracle JDK
 
-Download and install the desired version [hier](https://www.oracle.com/java/technologies/downloads/). Consult the specific documentation at *docs.oracle.com* for detailed guidance. For example, for a *64-Bit Oracle JDK 23 for a Linux system*, look at the detailed documentation [here](https://docs.oracle.com/en/java/javase/23/install/installation-jdk-linux-platforms.html). Example:
+Download and install the desired version [here](https://www.oracle.com/java/technologies/downloads/). Consult the specific documentation at *docs.oracle.com* for detailed guidance. For example, for a *64-Bit Oracle JDK 23 for a Linux system*, look at the detailed documentation [here](https://docs.oracle.com/en/java/javase/23/install/installation-jdk-linux-platforms.html). Example:
 
 ```
 curl -O https://download.oracle.com/java/23/latest/jdk-23_linux-x64_bin.deb
