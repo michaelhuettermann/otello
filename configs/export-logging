@@ -1,0 +1,6 @@
+export JAVA_TOOL_OPTIONS="-javaagent:/home/ubuntu/otel/opentelemetry-javaagent.jar" \
+  OTEL_TRACES_EXPORTER=none \
+  OTEL_METRICS_EXPORTER=none \
+  OTEL_LOGS_EXPORTER=logging \
+  OTEL_METRIC_EXPORT_INTERVAL=15000
+
