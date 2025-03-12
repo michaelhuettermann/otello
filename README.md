@@ -1,8 +1,6 @@
 # The Otello showcase
 
-This sandbox is loosely based on pieces of the offical documentation of OpenTelemetry [here](https://opentelemetry.io/docs/languages/java/getting-started/). 
-
-It specifically shows:
+The Otello project is an ongoing initiative. It specifically shows:
 
 - An 101 on applied telemetry.
 - How to set up Oracle OpenJDK, and run modern Java versions (17+) on it.
@@ -16,3 +14,5 @@ It is used as:
 - A self-contained starter package for students and beginners.
 - A demo kit for interactive meetups and conferences.
 - A sandbox to work on and test modern Java features in relation to telemetry.
+
+In parts, this sandbox is loosely based on pieces of the offical documentation of OpenTelemetry [here](https://opentelemetry.io/docs/languages/java/getting-started/). 
