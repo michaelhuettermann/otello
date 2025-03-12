@@ -7,7 +7,7 @@ The Otello project is an ongoing initiative. It is rooted on three pillars to sp
   - How to jump start with [Oracle Cloud Infrastructure OCI](https://www.oracle.com/cloud/), the Oracle Cloud.
   - How to set up [Oracle OpenJDK](https://www.oracle.com/java/technologies/downloads/) on a public cloud system utilized by OCI.
   - How to run modern Java versions (17+) with its recent language features on it.
-- A 101 on applied [OpenTelemetry](https://opentelemetry.io/): How to perform Jave bytecode instrumentation for observability purposes, including
+- A 101 on applied observability based on the [OpenTelemetry](https://opentelemetry.io/) standard: Why and how to perform Jave bytecode instrumentation for observability purposes, including
   - How to generate and examine logs from instrumented Java code.
   - How to generate and examine traces from instrumented Java code.
   - How to generate and examine metrics from instrumented Java code.
