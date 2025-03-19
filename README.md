@@ -45,22 +45,10 @@ Java HotSpot(TM) 64-Bit Server VM (build 21.0.6+8-LTS-188, mixed mode, sharing)
 
 Please note that you must use a JDK with a version greater equal 21 for the snippets included in Otello.
 
-### Install Gradle
-
-Install Gradle, e.g. with an appropriate package manager: ```sdk install gradle 8.13```. 
-
-This results in:
-```
-gradle -version
-------------------------------------------------------------
-Gradle 8.13
-------------------------------------------------------------
-[...]
-```
-
 ## Setup the baseline
 
-- Clone this repository. 
+- Install Gradle, e.g. with an appropriate package manager: ```sdk install gradle 8.13```.
+- Clone this Git repository. 
 - Fetch the Java agent of OpenTelemetry: ```curl -L -O https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar```.
 - Review the config file and its path, and set environmental configuration to focus on tracing based on automatic instrumentation: ```source configs/export-tracing```.
 - Assemble the build, with Gradle: ```gradle assemble```.
