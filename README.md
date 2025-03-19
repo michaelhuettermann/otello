@@ -17,7 +17,7 @@ The Otello project is an ongoing initiative. It is rooted on three pillars to sp
 
 This lab is used as:
 - A self-contained starter package for OpenTelemetry for students and beginners loosely based on pieces of the offical documentation [here](https://opentelemetry.io/docs/languages/java/getting-started/).
-- A demo kit for interactive meetups and conferences.
+- A demo kit based on underlying primitives for interactive meetups and conferences.
 - A sandbox to work on and test modern Java features in conjunction with telemetry.
 
 ## Installation
@@ -40,15 +40,15 @@ Download and install the desired version [here](https://www.oracle.com/java/tech
 
 ```
 curl -O https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb
-dpkg -i jdk-23_linux-x64_bin.deb
+dpkg -i jdk-21_linux-x64_bin.deb
 ```
 
 This results in:
 ```
 java --version
-java 23.0.2 2025-01-21
-Java(TM) SE Runtime Environment (build 23.0.2+7-58)
-Java HotSpot(TM) 64-Bit Server VM (build 23.0.2+7-58, mixed mode, sharing)
+java version "21.0.6" 2025-01-21 LTS
+Java(TM) SE Runtime Environment (build 21.0.6+8-LTS-188)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.6+8-LTS-188, mixed mode, sharing)
 ```
 
 ## Setup the baseline
