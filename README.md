@@ -28,7 +28,7 @@ For Otello, a free set of Oracle Cloud resources is sufficient. For *Oracle Clou
 
 ### Oracle JDK
 
-Download and install the desired version [here](https://www.oracle.com/java/technologies/downloads/). Consult the specific documentation at *docs.oracle.com* for detailed guidance. For example, for a *64-Bit Oracle JDK 23 for a Linux system*, look at the detailed documentation [here](https://docs.oracle.com/en/java/javase/23/install/installation-jdk-linux-platforms.html). Example:
+Download and install the desired version of [Oracle JDK](https://www.oracle.com/java/technologies/downloads/). Consult the specific documentation at *docs.oracle.com* for detailed guidance. For example, for a *64-Bit Oracle JDK 23 for a Linux system*, look at the detailed documentation for the specific target version, e.g. the docs on [Java 23](https://docs.oracle.com/en/java/javase/23/install/installation-jdk-linux-platforms.html). Example:
 
 ```
 curl -O https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb
@@ -42,6 +42,8 @@ java version "21.0.6" 2025-01-21 LTS
 Java(TM) SE Runtime Environment (build 21.0.6+8-LTS-188)
 Java HotSpot(TM) 64-Bit Server VM (build 21.0.6+8-LTS-188, mixed mode, sharing)
 ```
+
+Please note that you must use a JDK greater equal 21 for the snippets included.
 
 ### Install Gradle
 
