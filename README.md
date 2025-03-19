@@ -52,17 +52,14 @@ Please note that you must use a JDK with a version greater equal 21 for the snip
 - Install Gradle, e.g. with an appropriate package manager: ```sdk install gradle 8.13```.
 - Clone this Git repository. 
 - Fetch the Java agent of OpenTelemetry: ```curl -L -O https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar```.
-- Review the config file and its path, and set environmental configuration to focus on tracing based on automatic instrumentation: ```source configs/export-tracing```.
 - Assemble the build, with Gradle: ```gradle assemble```.
-- Run the app: ```java -jar build/libs/otello.jar```.
 
 ## Run&inspect the example
-In a different shell, execute a call to the endpoint:
-```
-curl localhost:8080/rolldice
-```
 
-In the first shell, inspect the console output:
+Open a shell, and apply the config file. Review the file and its path, and set environmental configuration to focus on tracing based on automatic instrumentation: ```source configs/export-tracing```.
+
+Run the Otello app: ```java -jar build/libs/otello.jar```.
+
 ```
 2025-03-19T10:27:31.564Z  INFO 2306 --- [           main] otel.MyApplication                       : Starting MyApplication using Java 21.0.6 with PID 2306 (/home/ubuntu/otello/build/libs/otello.jar started by root in /home/ubuntu/otello)
 2025-03-19T10:27:31.955Z  INFO 2306 --- [           main] otel.MyApplication                       : No active profile set, falling back to 1 default profile: "default"
@@ -73,6 +70,17 @@ In the first shell, inspect the console output:
 2025-03-19T10:27:43.160Z  INFO 2306 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10407 ms
 2025-03-19T10:27:48.147Z  INFO 2306 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2025-03-19T10:27:48.249Z  INFO 2306 --- [           main] otel.MyApplication                       : Started MyApplication in 20.516 seconds (process running for 39.879)
+```
+
+The application is started.
+
+Open a second shell, and execute a call to the endpoint:
+```
+curl localhost:8080/rolldice
+```
+
+In the first shell, inspect the console output:
+```
 2025-03-19T10:28:00.452Z  INFO 2306 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-03-19T10:28:00.453Z  INFO 2306 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-03-19T10:28:00.457Z  INFO 2306 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
