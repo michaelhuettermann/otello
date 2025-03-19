@@ -22,13 +22,7 @@ This lab is used as:
 
 ## Installation
 
-### Oracle Cloud
-
-#### Setup connect
-
-tbd
-
-#### Configure a compute instance
+### Setup Oracle Cloud
 
 tbd
 
@@ -51,16 +45,26 @@ Java(TM) SE Runtime Environment (build 21.0.6+8-LTS-188)
 Java HotSpot(TM) 64-Bit Server VM (build 21.0.6+8-LTS-188, mixed mode, sharing)
 ```
 
+### Install Gradle
+
+Install Gradle, e.g. with an appropriate package manager  ```sdk install gradle 8.13```. 
+
+This results in:
+```
+gradle -version
+------------------------------------------------------------
+Gradle 8.13
+------------------------------------------------------------
+[...]
+```
+
 ## Setup the baseline
 
 - Clone this repository. 
 - Fetch the Java agent of OpenTelemetry: ```curl -L -O https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar```.
 - Review the config file and its path, and set environmental configuration to focus on tracing based on automatic instrumentation: ```source configs/export-tracing```.
-- Perform:
-```
-gradle assemble
-java -jar build/libs/otello.jar
-```
+- Assemble the build, with Gradle: ```gradle assemble```.
+- Run the app: ```java -jar build/libs/otello.jar```.
 
 ## Run&inspect the example
 In a different shell, execute a call to the endpoint:
