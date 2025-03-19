@@ -26,7 +26,7 @@ This lab is used as:
 
 tbd
 
-The demo setup was e.g. tested on Canonical Ubuntu 24.04.
+Take an approprivate base image, e.g. *Canonical Ubuntu 24.04*.
 
 ### Oracle JDK
 
@@ -47,7 +47,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 21.0.6+8-LTS-188, mixed mode, sharing)
 
 ### Install Gradle
 
-Install Gradle, e.g. with an appropriate package manager  ```sdk install gradle 8.13```. 
+Install Gradle, e.g. with an appropriate package manager: ```sdk install gradle 8.13```. 
 
 This results in:
 ```
