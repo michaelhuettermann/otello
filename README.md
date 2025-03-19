@@ -24,9 +24,11 @@ This lab is used as:
 
 ### Jump start on Oracle Cloud
 
-For Otello, a free set of Oracle Cloud resources is sufficient. For *Oracle Cloud Free Tier*, register for [Oracle Free Tier](https://signup.oraclecloud.com/). Once registered, log in and proceed to *Compute* to create a virtual machine and follow the latest documentation to work on [Compute](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/launchinginstance.htm). Stick to the defaults. Orchestrate an appropriate setup of your choice, with an *Image and shape* of a base image, e.g. *Canonical Ubuntu 24.04*, to provision a *VM.Standard.E2.1.Micro* with 1 CPU and 1 GB memory, and add a ssh key to the instance. Once the instance is created, you can [connect to it](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/accessinginstance.htm) with the ssh key you have provided during creation. The target is the public IP address you see in on the detail web page of your instance in the section ```Instance access```. In the following, for demo purposes and to keep things simple, we perform steps as *root* user, thus execute: ```sudo -s ```. 
+For Otello, a free set of Oracle Cloud resources is sufficient. For *Oracle Cloud Free Tier*, register for [Oracle Free Tier](https://signup.oraclecloud.com/). Once registered, log in and proceed to *Compute* to create a virtual machine and follow the latest documentation to work on [Compute](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/launchinginstance.htm). Stick to the defaults. Orchestrate an appropriate setup of your choice, with an *Image and shape* of a base image, e.g. *Canonical Ubuntu 24.04*, to provision a *VM.Standard.E2.1.Micro* with 1 CPU and 1 GB memory, and add a ssh key to the instance. Once the instance is created, you can [connect to it](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/accessinginstance.htm) with the ssh key you have provided during creation. The target is the public IP address you see in on the detail web page of your instance in the section ```Instance access```.  
 
 ### Oracle JDK
+
+In the following, for demo purposes and to keep things simple, we perform all steps as *root* user.
 
 Download and install the desired version of [Oracle JDK](https://www.oracle.com/java/technologies/downloads/). Consult the specific documentation at *docs.oracle.com* for detailed guidance. For example, for a *64-Bit Oracle JDK 21 for a Linux system*, look at the detailed documentation to [install Java](https://www.oracle.com/de/java/technologies/downloads/#java21). Example:
 
