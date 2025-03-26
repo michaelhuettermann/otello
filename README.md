@@ -92,13 +92,9 @@ In the first shell, inspect the console output:
 2025-03-19T10:28:02.861Z  INFO 2306 --- [nio-8080-exec-2] otel.GreetingController                  : ... pong!
 ```
 
-Tracing output is shown here:
+Tracing output from the *OtlpJsonLoggingSpanExporter* is shown here:
 ```yaml
-[
-   "otel.javaagent 2025-03-20 14":"37":"07":949 +0000
-][
-   BatchSpanProcessor_WorkerThread-1
-]"INFO io.opentelemetry.exporter.logging.otlp.OtlpJsonLoggingSpanExporter -"{
+{
    "resource":{
       "attributes":[
          {
@@ -152,7 +148,7 @@ Tracing output is shown here:
          {
             "key":"process.pid",
             "value":{
-               "intValue":"16283"
+               "intValue":"84827"
             }
          },
          {
@@ -176,7 +172,7 @@ Tracing output is shown here:
          {
             "key":"service.instance.id",
             "value":{
-               "stringValue":"e4ac50f7-3288-4565-9b5a-e38c79e0b7ba"
+               "stringValue":"63717881-5a27-45cc-8730-728ce0c62688"
             }
          },
          {
@@ -217,9 +213,7 @@ Tracing output is shown here:
          }
       ]
    },
-   "
-
-scopeSpans":[
+   "scopeSpans":[
       {
          "scope":{
             "name":"io.opentelemetry.http-url-connection",
@@ -230,13 +224,13 @@ scopeSpans":[
          },
          "spans":[
             {
-               "traceId":"a6d78ec9f9e7d4993a4aac1b5b25fc03",
-               "spanId":"1648256ac1edbf8d",
-               "parentSpanId":"f14e9a5c6fc6bf37",
+               "traceId":"5290940d490618bad88ffec4ff53a19b",
+               "spanId":"f537be0b620bb106",
+               "parentSpanId":"73d99edf515522b6",
                "name":"GET",
                "kind":3,
-               "startTimeUnixNano":"1742481424357035853",
-               "endTimeUnixNano":"1742481424360897578",
+               "startTimeUnixNano":"1742995854234091612",
+               "endTimeUnixNano":"1742995854428981256",
                "attributes":[
                   {
                      "key":"server.address",
@@ -265,13 +259,13 @@ scopeSpans":[
                   {
                      "key":"thread.id",
                      "value":{
-                        "intValue":"29"
+                        "intValue":"24"
                      }
                   },
                   {
                      "key":"thread.name",
                      "value":{
-                        "stringValue":"http-nio-8080-exec-6"
+                        "stringValue":"http-nio-8080-exec-1"
                      }
                   },
                   {
@@ -310,13 +304,13 @@ scopeSpans":[
          },
          "spans":[
             {
-               "traceId":"a6d78ec9f9e7d4993a4aac1b5b25fc03",
-               "spanId":"e8b12f9668ba7785",
-               "parentSpanId":"1648256ac1edbf8d",
+               "traceId":"5290940d490618bad88ffec4ff53a19b",
+               "spanId":"bbfe39bed43e0845",
+               "parentSpanId":"f537be0b620bb106",
                "name":"GET /greeting",
                "kind":2,
-               "startTimeUnixNano":"1742481424358147032",
-               "endTimeUnixNano":"1742481424360546155",
+               "startTimeUnixNano":"1742995854250264892",
+               "endTimeUnixNano":"1742995854348942125",
                "attributes":[
                   {
                      "key":"url.path",
@@ -357,7 +351,7 @@ scopeSpans":[
                   {
                      "key":"network.peer.port",
                      "value":{
-                        "intValue":"39278"
+                        "intValue":"35742"
                      }
                   },
                   {
@@ -381,7 +375,7 @@ scopeSpans":[
                   {
                      "key":"thread.id",
                      "value":{
-                        "intValue":"31"
+                        "intValue":"25"
                      }
                   },
                   {
@@ -393,7 +387,7 @@ scopeSpans":[
                   {
                      "key":"thread.name",
                      "value":{
-                        "stringValue":"http-nio-8080-exec-8"
+                        "stringValue":"http-nio-8080-exec-2"
                      }
                   },
                   {
@@ -415,12 +409,12 @@ scopeSpans":[
                "flags":769
             },
             {
-               "traceId":"a6d78ec9f9e7d4993a4aac1b5b25fc03",
-               "spanId":"f14e9a5c6fc6bf37",
+               "traceId":"5290940d490618bad88ffec4ff53a19b",
+               "spanId":"73d99edf515522b6",
                "name":"GET /rolldice",
                "kind":2,
-               "startTimeUnixNano":"1742481424353318810",
-               "endTimeUnixNano":"1742481424362057260",
+               "startTimeUnixNano":"1742995852739946325",
+               "endTimeUnixNano":"1742995854439477979",
                "attributes":[
                   {
                      "key":"url.path",
@@ -461,7 +455,7 @@ scopeSpans":[
                   {
                      "key":"network.peer.port",
                      "value":{
-                        "intValue":"32876"
+                        "intValue":"49902"
                      }
                   },
                   {
@@ -485,7 +479,7 @@ scopeSpans":[
                   {
                      "key":"thread.id",
                      "value":{
-                        "intValue":"29"
+                        "intValue":"24"
                      }
                   },
                   {
@@ -497,7 +491,7 @@ scopeSpans":[
                   {
                      "key":"thread.name",
                      "value":{
-                        "stringValue":"http-nio-8080-exec-6"
+                        "stringValue":"http-nio-8080-exec-1"
                      }
                   },
                   {
