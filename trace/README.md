@@ -1,17 +1,15 @@
 ## Tracing
 
 Open a shell, and check and then apply the config file. Review the file and its path, and set environmental configuration to focus on tracing based on automatic instrumentation: 
-
 ```source trace/export-tracing```. 
 
 Specifically, we customize the system properties for setting the [exporters](https://opentelemetry.io/docs/languages/java/configuration/#properties-exporters), and utilize *logging-otlp*. 
 
-Run the Otello app: ```java -jar build/libs/otello.jar```.
+Run the Otello app: 
+```java -jar build/libs/otello.jar```.
 
 Open a second shell, and execute a call to the endpoint:
-```
-curl localhost:8080/rolldice
-```
+```curl localhost:8080/rolldice```
 
 Watch the first shell. Tracing output from the *OtlpJsonLoggingSpanExporter* is shown:
 
