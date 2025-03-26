@@ -1,6 +1,10 @@
 ## Tracing
 
-Open a shell, and apply the config file. Review the file and its path, and set environmental configuration to focus on tracing based on automatic instrumentation: ```source configs/export-tracing```. Specifically, we customize the system properties for setting the [exporters](https://opentelemetry.io/docs/languages/java/configuration/#properties-exporters), and utilize *logging-otlp*. 
+Open a shell, and check and then apply the config file. Review the file and its path, and set environmental configuration to focus on tracing based on automatic instrumentation: 
+
+```source trace/export-tracing```. 
+
+Specifically, we customize the system properties for setting the [exporters](https://opentelemetry.io/docs/languages/java/configuration/#properties-exporters), and utilize *logging-otlp*. 
 
 Run the Otello app: ```java -jar build/libs/otello.jar```.
 
