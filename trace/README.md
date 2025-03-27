@@ -483,7 +483,7 @@ Let's zoom in to the context information of the trace.
 ```
 
 As the workflow, the trace is the umbrella that contains several units of work named [spans](https://opentelemetry.io/docs/concepts/signals/traces/#spans). 
-The spans hav a context. Their traceid is the same, i.e. they are part of the same trace. The root span of kind
+All spans have a context. Their *traceid* is the same for all spans, i.e. they are part of the same trace. The root span of kind
 [SERVER](https://opentelemetry.io/docs/concepts/signals/traces/#server) ("2") is the request to the *rolldice* 
 controller. Its child span of kind [CLIENT](https://opentelemetry.io/docs/concepts/signals/traces/#client) ("3") is the http url 
 connection. Its child is the *greeting* controller that is called from the *rolldice* controller.
