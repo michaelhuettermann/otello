@@ -438,7 +438,7 @@ Watch the first shell. Tracing output from the *OtlpJsonLoggingSpanExporter* is 
    "schemaUrl":"https://opentelemetry.io/schemas/1.24.0"
 }
 ```
-Let's zoom in to the spans.
+Let's zoom in to the context information of the trace.
 
 
 ```
@@ -453,7 +453,7 @@ Let's zoom in to the spans.
          "spanId":"f537be0b620bb106",
          "parentSpanId":"73d99edf515522b6",
          "name":"GET",
-         "kind":3,   //CLIENT
+         "kind":3,
          "startTimeUnixNano":"1742995854234091612",
          "endTimeUnixNano":"1742995854428981256",
       [...]
@@ -467,7 +467,7 @@ Let's zoom in to the spans.
          "spanId":"bbfe39bed43e0845",
          "parentSpanId":"f537be0b620bb106",
          "name":"GET /greeting",
-         "kind":2,   //SERVER  
+         "kind":2,
          "startTimeUnixNano":"1742995854250264892",
          "endTimeUnixNano":"1742995854348942125",
       [...]
@@ -475,7 +475,7 @@ Let's zoom in to the spans.
          "traceId":"5290940d490618bad88ffec4ff53a19b",
          "spanId":"73d99edf515522b6",
          "name":"GET /rolldice",
-         "kind":2,    //SERVER
+         "kind":2,
          "startTimeUnixNano":"1742995852739946325",
          "endTimeUnixNano":"1742995854439477979",
       [...]
