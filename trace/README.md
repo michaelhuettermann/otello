@@ -438,3 +438,52 @@ Watch the first shell. Tracing output from the *OtlpJsonLoggingSpanExporter* is 
    "schemaUrl":"https://opentelemetry.io/schemas/1.24.0"
 }
 ```
+Let's zoom in to the spans.
+
+
+```
+[...]
+"scope":{
+   "name":"io.opentelemetry.http-url-connection",
+   "version":"2.13.3-alpha",
+   [...]
+   "spans":[
+      {
+         "traceId":"5290940d490618bad88ffec4ff53a19b",
+         "spanId":"f537be0b620bb106",
+         "parentSpanId":"73d99edf515522b6",
+         "name":"GET",
+         "kind":3,   //CLIENT
+         "startTimeUnixNano":"1742995854234091612",
+         "endTimeUnixNano":"1742995854428981256",
+      [...]
+"scope":{
+   "name":"io.opentelemetry.tomcat-10.0",
+   "version":"2.13.3-alpha",
+   [...]
+   "spans":[
+      {
+         "traceId":"5290940d490618bad88ffec4ff53a19b",
+         "spanId":"bbfe39bed43e0845",
+         "parentSpanId":"f537be0b620bb106",
+         "name":"GET /greeting",
+         "kind":2,   //SERVER  
+         "startTimeUnixNano":"1742995854250264892",
+         "endTimeUnixNano":"1742995854348942125",
+      [...]
+      {
+         "traceId":"5290940d490618bad88ffec4ff53a19b",
+         "spanId":"73d99edf515522b6",
+         "name":"GET /rolldice",
+         "kind":2,    //SERVER
+         "startTimeUnixNano":"1742995852739946325",
+         "endTimeUnixNano":"1742995854439477979",
+      [...]
+}
+```
+
+As the workflow, the trace is the umbrella that contains several units of work named [spans](https://opentelemetry.io/docs/concepts/signals/traces/#spans). 
+The spans hav a context. Their traceid is the same, i.e. they are part of the same trace. The root span of kind
+[SERVER](https://opentelemetry.io/docs/concepts/signals/traces/#server) ("2") is the request to the *rolldice* 
+controller. Its child span of kind [CLIENT](https://opentelemetry.io/docs/concepts/signals/traces/#client) ("3") is the http url 
+connection. Its child is the *greeting* controller that is called from the *rolldice* controller.
