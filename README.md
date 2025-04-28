@@ -97,3 +97,10 @@ For details on the layout, see e.g. [here](https://opentelemetry.io/docs/languag
 
 [Trace](trace/README.md)
 
+## Trace
+
+[Logs](logs/README.md)
+
+## Trace
+
+[Metrics](metrics/README.md)
