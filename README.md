@@ -1,5 +1,11 @@
 # The Otello showcase
 
+## Motivation
+This lab is used as:
+- A community-driven, self-contained starter package for OpenTelemetry with Java for students and beginners.
+- A demo kit based on underlying primitives for interactive meetups and conferences.
+- A sandbox to work on and test modern Java features in conjunction with telemetry.
+
 ## Introduction
 The Otello project is an ongoing initiative. It is rooted on three pillars to specifically show:
 
@@ -14,11 +20,6 @@ The Otello project is an ongoing initiative. It is rooted on three pillars to sp
 - Latest features of most recent Java release versions, e.g. 
   - *Pattern Matching for switch*. Originally introduced as preview with JDK 17 and proposed via [JEP 406](https://openjdk.org/jeps/406), this feature was subsequently refined by following JEPs, e.g. [JEP 441](https://openjdk.org/jeps/441) (JDK 21). 
   - *Record Patterns*. Relating to the language feature of pattern matching, this feature extends pattern matching to destructive instances of record classes and adds nested patterns, see [JEP 440](https://openjdk.org/jeps/440) (JDK 21). 
-
-This lab is used as:
-- A community-driven, self-contained starter package for OpenTelemetry with Java for students and beginners.
-- A demo kit based on underlying primitives for interactive meetups and conferences.
-- A sandbox to work on and test modern Java features in conjunction with telemetry.
 
 ## Installation
 
