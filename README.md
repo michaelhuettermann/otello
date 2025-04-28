@@ -93,14 +93,16 @@ In the first shell, inspect the console output:
 
 For details on the layout, see e.g. [here](https://opentelemetry.io/docs/languages/java/getting-started/).
 
-## Trace
+## Utilizing OpenTelemetry
+
+### Trace
 
 [Trace](trace/README.md)
 
-## Logs
+### Logs
 
 [Logs](logs/README.md)
 
-## Metrics
+### Metrics
 
 [Metrics](metrics/README.md)
