@@ -16,7 +16,7 @@ The Otello project is an ongoing initiative. It is rooted on three pillars to sp
   - *Record Patterns*. Relating to the language feature of pattern matching, this feature extends pattern matching to destructive instances of record classes and adds nested patterns, see [JEP 440](https://openjdk.org/jeps/440) (JDK 21). 
 
 This lab is used as:
-- A self-contained starter package for OpenTelemetry for students and beginners loosely based on pieces of the offical documentation [here](https://opentelemetry.io/docs/languages/java/getting-started/).
+- A community-driven, self-contained starter package for OpenTelemetry with Java for students and beginners.
 - A demo kit based on underlying primitives for interactive meetups and conferences.
 - A sandbox to work on and test modern Java features in conjunction with telemetry.
 
@@ -89,6 +89,8 @@ In the first shell, inspect the console output:
 2025-03-19T10:28:01.269Z  INFO 2306 --- [nio-8080-exec-1] otel.RollController                      : Ping ...
 2025-03-19T10:28:02.861Z  INFO 2306 --- [nio-8080-exec-2] otel.GreetingController                  : ... pong!
 ```
+
+For details on the layout, see e.g. [here](https://opentelemetry.io/docs/languages/java/getting-started/).
 
 ## Trace
 
