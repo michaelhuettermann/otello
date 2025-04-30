@@ -11,7 +11,7 @@ Run the Otello app:
 Open a second shell, and execute a call to the endpoint:
 ```curl localhost:8080/rolldice```
 
-Watch the first shell. Logging output from the *OtlpJsonLoggingLogRecordExporter* is shown:
+Watch the first shell. Logging output from the *OtlpJsonLoggingLogRecordExporter* (see [LogRecordExporter](https://opentelemetry.io/docs/languages/java/sdk/#logrecordexporter) for configuration options) is shown:
 
 ```yaml
 {
