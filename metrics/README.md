@@ -1498,3 +1498,12 @@ Watch the first shell. Metrics are logged to JUL in the OTLP JSON encoding. The 
   "schemaUrl": "https://opentelemetry.io/schemas/1.24.0"
 }
 ```
+The element *metrics* is of special interest here. It contains a list of standard metrics collected during runtime.
+Grouped by *scope*, they are related to the VM and its runtime telemetry, or, in case of ```io.opentelemetry.http-url-connection```, 
+related to the request to the application. The ```http.client.request.duration``` contains data points as a list of start/end times for the 
+number of http client requests, i.e. data related to */greeting*. The ```io.opentelemetry.tomcat-10.0``` shows the duration of http server requests, with further
+context data, e.g. the *http route* (our entry point that is */rolldice*). *traceId* and *spanId* allow the deep integration with
+logging and tracing. They are included in the *examplars*. [exemplars](https://opentelemetry.io/docs/specs/otel/metrics/data-model/#exemplars)
+are recorded values that associates OpenTelemetry context to a metric event within a Metric. As part of the data model of
+OpenTelemetry, with [histograms](https://opentelemetry.io/docs/specs/otel/metrics/data-model/#histogram), we gather histogram metric data points, 
+i.e. a population of recorded measurements in a compressed format. A histogram sums events into populations with an overall event count and aggregate sum for all events.
