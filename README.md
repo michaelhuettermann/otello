@@ -106,3 +106,10 @@ For details on the layout, see e.g. [here](https://opentelemetry.io/docs/languag
 ### Metrics
 
 [Metrics](metrics/README.md)
+
+### Troubleshooting
+1. The Gradle's compile task is hanging. 
+Possible path: Try to tweak your Gradle build, e.g. add ''--build-cache''. If a free tier solution offers more resources, switch to a VM with more resources.
+2. The Gradle build is throwing errors stating that instrumentation is not possible.
+Possile path: If you have set properties for instrumentation after the initial build and you again want to run the Gradle build, 
+then reset the instrumentation by executing ```source util/export-none```. 
