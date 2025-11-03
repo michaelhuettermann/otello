@@ -1,3 +1,5 @@
+## Troubleshooting
+
 1. The Gradle's compile task is hanging.
    Possible path: Try to tweak your Gradle build, e.g. add ''--build-cache''. If a free tier solution offers more resources, switch to a VM with more resources.
    You may get further information in the ```Observability & Management``` section in your OCI console. Particularly check the metric ```CpuUtilization``` and ```MemoryUtilization```  in metric namespace ```oci_computeagent```.

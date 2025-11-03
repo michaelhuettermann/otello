@@ -97,16 +97,16 @@ For details on the layout, see e.g. [here](https://opentelemetry.io/docs/languag
 
 ### Trace
 
-[Trace](trace/README.md)
+[here](trace/README.md)
 
 ### Logs
 
-[Logs](logs/README.md)
+[here](logs/README.md)
 
 ### Metrics
 
-[Metrics](metrics/README.md)
+[here](metrics/README.md)
 
 ## Troubleshooting
 
-[Troubleshooting](trouble/README.md)
+[here](trouble/README.md)
