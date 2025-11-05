@@ -91,6 +91,9 @@ In the first shell, inspect the console output:
 2025-03-19T10:28:02.861Z  INFO 2306 --- [nio-8080-exec-2] otel.GreetingController                  : ... pong!
 ```
 
+The output of JDK 17's *Pattern Matching for switch* in conjunction with *Record Patterns* is reported by the output:
+```Result of computation: A DiceValue!```, and its coding can be found in [MyApplication.java](MyApplication.java).
+
 For details on the layout, see e.g. [here](https://opentelemetry.io/docs/languages/java/getting-started/).
 
 ## Utilizing OpenTelemetry
