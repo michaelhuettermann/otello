@@ -110,6 +110,12 @@ For details on the layout, see e.g. [here](https://opentelemetry.io/docs/languag
 
 [here](metrics/README.md)
 
+## Utilizing OCI 
+
+### OCI Observability
+
+[here](oci/README.md)
+
 ## Troubleshooting
 
 [here](trouble/README.md)
