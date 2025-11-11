@@ -2,10 +2,10 @@
 
 ## Motivation
 This lab is used as:
-- A community-driven, self-contained starter package to learn about telemetry for students and beginners.
+- A community-driven, self-contained starter package for students and beginners to learn about telemetry.
 - A demo kit based on underlying primitives for interactive meetups and conferences.
 - A sandbox to work on and test modern Java features in conjunction with telemetry.
-- A one-stop-shop to describe easy paths how to set up and use resources on Oracle Cloud. 
+- A one-stop-shop to describe easy paths how to set up and use resources on Oracle Cloud to unbox the points above. 
 
 ## Introduction
 The Otello project is an ongoing initiative. It is rooted on three pillars to specifically show:
