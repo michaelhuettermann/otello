@@ -103,3 +103,16 @@ A graph of our trace with its spans can be displayed, and in our example, it loo
 ![spans-graphic.png](../pics/spans-graphic.png)
 
 This topology contains the units utilized for the spans.
+
+## Observability & Management: Monitoring
+
+Navigating to *Observability & Managment''s section *Monitoring*, a *Metric Explorer* is available. Select
+your *compartment* and the *metric namespace* you are interested in. We are keen to inspect the utilization of the
+CPU, thus we choose the *metric name* called *CpuUtlization'. Values of the metric are shown in the user-defined
+time interval.
+
+![metrics-explorer.png](../pics/metrics-explorer.png)
+
+The query was configured by selecting entries of predefined fields. The result maps to the query that is shown on the left of the UI:
+
+```CpuUtilization[1m].mean()```
