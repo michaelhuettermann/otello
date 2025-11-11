@@ -99,7 +99,8 @@ For details on the layout, see e.g. [here](https://opentelemetry.io/docs/languag
 
 ## Utilizing OpenTelemetry
 
-Fetch the Java agent of OpenTelemetry and put it into the Otello directory, on OCI: 
+Fetch the Java agent of OpenTelemetry and put it into the Otello directory, on OCI:
+
 ```curl -L -O https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar```.
 
 ### Trace
