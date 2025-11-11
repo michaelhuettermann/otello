@@ -9,11 +9,12 @@ This lab is used as:
 ## Introduction
 The Otello project is an ongoing initiative. It is rooted on three pillars to specifically show:
 
-- How to quickly start with provisioning required ressources, including
+- How to quickly start with provisioning required resources, including
   - How to jump start with [Oracle Cloud Infrastructure OCI](https://www.oracle.com/cloud/), the Oracle Cloud.
   - How to set up [Oracle OpenJDK](https://www.oracle.com/java/technologies/downloads/) on a public cloud system utilized by OCI.
-  - How to run modern Java versions with its recent language features on it.
-- A 101 on applied observability based on the [OpenTelemetry](https://opentelemetry.io/) standard: Why and how to perform Jave bytecode instrumentation for observability purposes, including
+  - How to leverage observability on OCI.
+  - How to run modern Java versions with its recent language features on OCI.
+- A 101 on applied observability with its concepts based on the [OpenTelemetry](https://opentelemetry.io/) standard: Why and how to perform Jave bytecode instrumentation for observability purposes, including
   - How to generate and examine logs from instrumented Java code.
   - How to generate and examine traces from instrumented Java code.
   - How to generate and examine metrics from instrumented Java code.
@@ -52,7 +53,6 @@ Please note that you must use a JDK with a version greater equal 21 for the snip
 
 - Install Gradle, e.g. with an appropriate package manager: ```sdk install gradle 8.13```.
 - Clone this Git repository. 
-- Fetch the Java agent of OpenTelemetry: ```curl -L -O https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar```.
 - Assemble the build, with Gradle: ```gradle assemble```.
 
 ## Run&inspect the example
@@ -98,6 +98,9 @@ For details on the layout, see e.g. [here](https://opentelemetry.io/docs/languag
 
 ## Utilizing OpenTelemetry
 
+Fetch the Java agent of OpenTelemetry and put it into the Otello directory, on OCI: 
+```curl -L -O https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar```.
+
 ### Trace
 
 [here](trace/README.md)
@@ -110,9 +113,11 @@ For details on the layout, see e.g. [here](https://opentelemetry.io/docs/languag
 
 [here](metrics/README.md)
 
-## Utilizing OCI 
+## Utilizing OCI Observability&Management
 
-### OCI Observability
+### OCI Application Performance Management APM
+
+Observability features can be found in OCI's section *Application Performance Management (APM)*.
 
 [here](oci/README.md)
 

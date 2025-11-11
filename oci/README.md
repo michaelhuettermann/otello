@@ -1,15 +1,24 @@
-## OCI Observability & Management
+## OCI Observability & Management: APM
 
-First, in OCI under the section ```Observability & Management```, navigate to ```Administration``` and create
-an ```APM domains```. Only a name is necessary, and the compartment the APM domain is located in. Check that
-you want to create the domain as always free.
+In OCI, advanced observability features are located in the Application Performance Management section, *APM* in short.
 
-Navigate into the freshly created domain and move to ```Install APM agent```. Follow the steps.
-When you download the agent from Maven central as documented, please note, the agent version might be newer than the version that is 
-mentioned as part of the detailed how-to on that page. Once the agent (jar) is downloaded, provision it with the parameter of data key, service name
-and destination. You can take a service name of your choice, and reference the endpoint that is listed in the domain overview as destination endpoint.
+### Create and configure resources
+
+#### APM domain
+First, in OCI under the section *Observability & Management*, navigate to the *APM* section *Administration* and create
+an *APM domain*. As necessary steps, choose a name for your domain, and the compartment the APM domain is located in. Check the box that
+you want to create the domain as to be free.
+
+#### APM agent
+Navigate into the freshly created domain and move to *Install APM agent*. Follow the steps to download, provision and utilize the agent.
+When you download the agent from Maven central as documented, please note, the most recent agent version might be newer than the version that is 
+mentioned as part of the detailed how-to on that web page inside OCI. Once the agent (jar) is downloaded, provision it with the parameter of data key, service name
+and destination. You can generate a data key via UI, a service name of your choice (to later link to it), and reference the endpoint that is listed in the domain overview as destination endpoint to stream data to.
 You can double-check the successful provisioning by watching console output and the newly created folder 
-oracle-apm-agent.
+named oracle-apm-agent inside your OCI instance's working directory.
+
+### Provision the agent
+Provision is done once. This step configures the agent locally to serve later on.
 
 Start the Otello app with : 
 ```java -javaagent:/home/ubuntu/otello/oracle-apm-agent/bootstrap/ApmAgent.jar -jar -Dspring.jmx.enabled=true -Dserver.tomcat.mbeanregistry.enabled=true /home/ubuntu/otello/build/libs/otello.jar```.
@@ -53,7 +62,13 @@ Oracle APM Agent: Running with Bootstrap Discovery: false
                   Total Classes Inspected/Transformed: 4097 after 1 iterations of 60 sec each
 ```
 
+The agent was provisioned.
+
+## Leverage APM
+
+### Trigger some traffic
 Open a second shell, and execute a call to the endpoint:
+
 ```curl localhost:8080/rolldice```
 
 Watch the first shell. The agent streams the data to the endpoint in OCI.
@@ -71,3 +86,20 @@ Oracle APM Agent: Redefining java.logging module to allow "opens" access on java
 2025-11-10T12:10:43.450Z  INFO 99659 --- [nio-8080-exec-2] otel.GreetingController                  : ... pong!
 Oracle APM - log directory is /home/ubuntu/otello/oracle-apm-agent/log/instance-20241121-1211_8080
 ```
+
+### Inspect reports in OCI
+
+Inside OCI console, navigate to the *Trace Explorer*. We see a table with a list of traces, one entry per each call via *curl*. 
+In this overview, we see some details including the amount of containing spans.
+![service-traces.png](../pics/service-traces.png)
+
+We can zoom in to show details on the included spans.
+![spans.png](../pics/spans.png)
+
+We can work on those spans, compare and inspect them.
+
+A graph of our trace with its spans can be displayed, and in our example, it looks like this:
+
+![spans-graphic.png](../pics/spans-graphic.png)
+
+This topology contains the units utilized for the spans.
