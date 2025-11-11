@@ -12,9 +12,9 @@ The Otello project is an ongoing initiative. It is rooted on three pillars to sp
 - How to quickly start with provisioning required resources, including
   - How to jump start with [Oracle Cloud Infrastructure OCI](https://www.oracle.com/cloud/), the Oracle Cloud.
   - How to set up [Oracle OpenJDK](https://www.oracle.com/java/technologies/downloads/) on a public cloud system utilized by OCI.
-  - How to leverage observability on OCI.
-  - How to run modern Java versions with its recent language features on OCI.
-- A 101 on applied observability with its concepts based on the [OpenTelemetry](https://opentelemetry.io/) standard: Why and how to perform Jave bytecode instrumentation for observability purposes, including
+  - How to leverage observability on OCI, with [APM](https://www.oracle.com/manageability/application-performance-monitoring/).
+  - How to run modern [Java versions](https://www.oracle.com/java/technologies/downloads/) with its recent language features on OCI.
+- A 101 on applied observability introducing concepts based on the [OpenTelemetry](https://opentelemetry.io/) standard: Why and how to perform Jave bytecode instrumentation for observability purposes, including
   - How to generate and examine logs from instrumented Java code.
   - How to generate and examine traces from instrumented Java code.
   - How to generate and examine metrics from instrumented Java code.
@@ -52,7 +52,7 @@ Please note that you must use a JDK with a version greater equal 21 for the snip
 ## Setup the baseline
 
 - Install Gradle, e.g. with an appropriate package manager: ```sdk install gradle 8.13```.
-- Clone this Git repository. 
+- Clone this Git repository on the OCI instance. Your local clone is the working directory.
 - Assemble the build, with Gradle: ```gradle assemble```.
 
 ## Run&inspect the example
