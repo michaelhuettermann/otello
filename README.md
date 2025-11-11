@@ -9,8 +9,8 @@ This lab is used as:
 ## Introduction
 The Otello project is an ongoing initiative. It is rooted on three pillars to specifically show:
 
-- How to quickly start with provisioning required resources, including
-  - How to jump start with [Oracle Cloud Infrastructure OCI](https://www.oracle.com/cloud/), the Oracle Cloud.
+- How to quickly jump start with provisioning resources und utilizing them on [Oracle Cloud Infrastructure OCI](https://www.oracle.com/cloud/), including
+  - How to set up a [Compute Instance](https://www.oracle.com/cloud/compute/) as a sandbox for your workload on OCI.
   - How to set up [Oracle OpenJDK](https://www.oracle.com/java/technologies/downloads/) on a public cloud system utilized by OCI.
   - How to leverage observability on OCI, with [APM](https://www.oracle.com/manageability/application-performance-monitoring/).
   - How to run modern [Java versions](https://www.oracle.com/java/technologies/downloads/) with its recent language features on OCI.
