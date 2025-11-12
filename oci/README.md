@@ -17,7 +17,7 @@ Follow the steps to download, provision and utilize the agent.
 When you download the agent from Maven central as documented, please note, the most recent agent version might be newer than the version that is 
 mentioned as part of the detailed how-to on that web page inside OCI. Once the agent (jar) is downloaded, provision it with the parameter of data key, service name
 and destination. The data key is the key you created while setting up the APM domain. 
-The service name is your choice (to later link to it), and you now must reference the data uploas endpoint that is listed in the domain overview as destination endpoint to stream data to.
+The service name is your choice (to later link to it), and you now must reference the data upload endpoint that is listed in the domain overview as destination endpoint to stream data to.
 You can double-check the successful provisioning by watching console output and the newly created folder 
 named oracle-apm-agent inside your OCI instance's working directory.
 
@@ -110,9 +110,9 @@ This topology contains the units utilized for the spans.
 
 ## Observability & Management: Monitoring
 
-Navigating to *Observability & Managment''s section *Monitoring*, a *Metric Explorer* is available. Select
+Navigating to *Observability & Management''s section *Monitoring*, a *Metric Explorer* is available. Select
 your *compartment* and the *metric namespace* you are interested in. We are keen to inspect the utilization of the
-CPU, thus we choose the *metric name* called *CpuUtlization'. Values of the metric are shown in the user-defined
+CPU, thus we choose the *metric name* called *CpuUtilization*. Values of the metric are shown in the user-defined
 time interval.
 
 ![metrics-explorer.png](../pics/metrics-explorer.png)
