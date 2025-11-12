@@ -8,14 +8,15 @@ In OCI, advanced observability features are located in the Application Performan
 First, in OCI under the section *Observability & Management*, navigate to the *APM* section *Administration* and create
 an *APM domain*. An APM domain is an OCI resource that contains systems being monitored by OCI APM.
 As necessary steps, choose a name for your domain, and the compartment the APM domain is located in. 
-Check the box that you want to create the domain as to be free. The out-created upload endpoint and data keys must be used in the 
+Check the box that you want to create the domain as to be free. The auto-created upload endpoint and data keys must be used in the 
 following step of setting up an *APM agent*.
 
 #### APM agent
 Navigate into the freshly created domain and move to *Install APM agent*. In our case, we seek to use a Java agent that runs on our *OCI instance*.
 Follow the steps to download, provision and utilize the agent.
 When you download the agent from Maven central as documented, please note, the most recent agent version might be newer than the version that is 
-mentioned as part of the detailed how-to on that web page inside OCI. Once the agent (jar) is downloaded, provision it with the parameter of data key, service name
+mentioned as part of the detailed how-to on that web page inside OCI. Since not all versions are archived on Maven central, navigate the target directory and check the available versions. 
+Once the agent (jar) is downloaded into the working directory, provision it with the parameter of data key, service name
 and destination. The data key is the key you created while setting up the APM domain. 
 The service name is your choice (to later link to it), and you now must reference the data upload endpoint that is listed in the domain overview as destination endpoint to stream data to.
 You can double-check the successful provisioning by watching console output and the newly created folder 
