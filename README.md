@@ -5,7 +5,7 @@ This lab is used as:
 - A community-driven, self-contained starter package for students and beginners to learn about telemetry.
 - A demo kit based on underlying primitives for interactive meetups and conferences.
 - A sandbox to work on and test modern Java features in conjunction with telemetry.
-- A one-stop-shop to describe easy paths how to set up and use resources on Oracle Cloud to unbox the points above. 
+- A one-stop-shop to describe easy paths how to set up and use services of Oracle Cloud to unbox the points above. 
 
 ## Introduction
 The Otello project is an ongoing initiative. It is rooted on three pillars to specifically show:
@@ -19,7 +19,7 @@ The Otello project is an ongoing initiative. It is rooted on three pillars to sp
   - How to generate and examine logs from instrumented Java code.
   - How to generate and examine traces from instrumented Java code.
   - How to generate and examine metrics from instrumented Java code.
-- Latest features of most recent Java release versions, e.g. 
+- Latest features of most recent Java release versions, e. g. 
   - *Pattern Matching for switch*. Originally introduced as preview with JDK 17 and proposed via [JEP 406](https://openjdk.org/jeps/406), this feature was subsequently refined by following JEPs, e.g. [JEP 441](https://openjdk.org/jeps/441) (JDK 21). 
   - *Record Patterns*. Relating to the language feature of pattern matching, this feature extends pattern matching to destructive instances of record classes and adds nested patterns, see [JEP 440](https://openjdk.org/jeps/440) (JDK 21). 
 
@@ -27,7 +27,7 @@ The Otello project is an ongoing initiative. It is rooted on three pillars to sp
 
 ### Jump start on Oracle Cloud
 
-For Otello, a free set of Oracle Cloud resources is sufficient. Register for [Oracle Free Tier](https://signup.oraclecloud.com/). Once registered, log in and proceed to [Compute](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/launchinginstance.htm). Stick to the defaults. Orchestrate an appropriate setup of your choice, with an *Image and shape* of a base image, e.g. *Canonical Ubuntu 24.04*, to provision a *VM.Standard.E2.1.Micro* with 1 CPU and 1 GB memory, and add a ssh key to the instance. Once the instance is created, you can [connect to it](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/accessinginstance.htm) with the ssh key you have provided during creation. The target is the public IP address you see in on the detail web page of your instance in the section *Instance access*.  
+For Otello, the Oracle Cloud free tier is sufficient. Register for [Oracle Free Tier](https://signup.oraclecloud.com/). Once registered, log in and proceed to [Compute](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/launchinginstance.htm). Stick to the defaults. Orchestrate an appropriate setup of your choice, with an *Image and shape* of a base image, e.g. *Canonical Ubuntu 24.04*, to provision a *VM.Standard.E2.1.Micro* with 1 CPU and 1 GB memory, and add a ssh key to the instance. Once the instance is created, you can [connect to it](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/accessinginstance.htm) with the ssh key you have provided during creation. The target is the public IP address you see in on the detail web page of your instance in the section *Instance access*.  
 
 ### Oracle JDK
 
@@ -48,12 +48,12 @@ Java(TM) SE Runtime Environment (build 21.0.6+8-LTS-188)
 Java HotSpot(TM) 64-Bit Server VM (build 21.0.6+8-LTS-188, mixed mode, sharing)
 ```
 
-Please note that you must use a JDK with a version greater equal 21 for the snippets included in Otello.
+Please note that you must use a JDK with a version greater equal 21 to be able to run Otello.
 
 ## Setup the baseline
 
 - Install Gradle, e.g. with an appropriate package manager: ```sdk install gradle 8.13```.
-- Clone this Git repository on the OCI instance. Your local clone is the working directory.
+- Clone this Git repository on the OCI instance. Your local clone is the working directory for steps below.
 - Assemble the build, with Gradle: ```gradle assemble```.
 
 ## Run&inspect the example
@@ -95,7 +95,7 @@ In the first shell, inspect the console output:
 The output of JDK 17's *Pattern Matching for switch* in conjunction with *Record Patterns* is reported by the output:
 ```Result of computation: A DiceValue!```, and its coding can be found in [RollController.java](RollController.java).
 
-For details on the layout, see e.g. [here](https://opentelemetry.io/docs/languages/java/getting-started/).
+For details on the layout, see e. g. [here](https://opentelemetry.io/docs/languages/java/getting-started/).
 
 ## Utilizing OpenTelemetry
 
@@ -115,14 +115,14 @@ Fetch the Java agent of OpenTelemetry and put it into the Otello directory, on O
 
 [here](metrics/README.md)
 
-## Utilizing OCI Observability&Management
+## Utilizing OCI Observability 
 
 ### OCI Application Performance Management APM
 
-Observability features can be found in OCI's section *Application Performance Management (APM)*.
+Observability services can be found in OCI's section *Application Performance Management (APM)*.
 
 [here](oci/README.md)
 
-## Troubleshooting
+## FAQ
 
 [here](trouble/README.md)
