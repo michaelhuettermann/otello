@@ -1,8 +1,8 @@
 ## FAQ
 
-[Gradle's compile task hangs](#compile)  
-[Gradle's build throwing instrumenting errors](#instrument)  
-[Shell is not my preferred setup](#shell)
+[Gradle's compile task hangs](#compile)<br/>
+[Gradle's build throwing instrumenting errors](#instrument)<br/>
+[Shell is not my preferred setup](#shell)<br/>
 [What is the relation of OpenTelemetry and OCI, in Otello](#oci)
 
 <!--suppress ALL -->
