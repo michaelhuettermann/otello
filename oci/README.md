@@ -6,9 +6,7 @@ In OCI, advanced observability features are located in the Application Performan
 
 #### APM domain
 First, in OCI under the section *Observability & Management*, navigate to the *APM* section *Administration* and create
-an *APM domain*. 
-
-An APM domain is an OCI resource that contains systems being monitored by OCI APM.
+an *APM domain*. An APM domain is an OCI resource that contains systems being monitored by OCI APM.
 As necessary steps, choose a name for your domain, and the compartment the APM domain is located in. 
 Check the box that you want to create the domain as to be free. The out-created upload endpoint and data keys must be used in the 
 following step of setting up an *APM agent*.
