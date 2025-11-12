@@ -6,19 +6,25 @@ In OCI, advanced observability features are located in the Application Performan
 
 #### APM domain
 First, in OCI under the section *Observability & Management*, navigate to the *APM* section *Administration* and create
-an *APM domain*. As necessary steps, choose a name for your domain, and the compartment the APM domain is located in. Check the box that
-you want to create the domain as to be free.
+an *APM domain*. 
+
+An APM domain is an OCI resource that contains systems being monitored by OCI APM.
+As necessary steps, choose a name for your domain, and the compartment the APM domain is located in. 
+Check the box that you want to create the domain as to be free. The out-created upload endpoint and data keys must be used in the 
+following step of setting up an *APM agent*.
 
 #### APM agent
-Navigate into the freshly created domain and move to *Install APM agent*. Follow the steps to download, provision and utilize the agent.
+Navigate into the freshly created domain and move to *Install APM agent*. In our case, we seek to use a Java agent that runs on our *OCI instance*.
+Follow the steps to download, provision and utilize the agent.
 When you download the agent from Maven central as documented, please note, the most recent agent version might be newer than the version that is 
 mentioned as part of the detailed how-to on that web page inside OCI. Once the agent (jar) is downloaded, provision it with the parameter of data key, service name
-and destination. You can generate a data key via UI, a service name of your choice (to later link to it), and reference the endpoint that is listed in the domain overview as destination endpoint to stream data to.
+and destination. The data key is the key you created while setting up the APM domain. 
+The service name is your choice (to later link to it), and you now must reference the data uploas endpoint that is listed in the domain overview as destination endpoint to stream data to.
 You can double-check the successful provisioning by watching console output and the newly created folder 
 named oracle-apm-agent inside your OCI instance's working directory.
 
 ### Provision the agent
-Provision is done once. This step configures the agent locally to serve later on.
+Provision is done once. This step configures the agent locally to serve later on to collect and stream data to OCI.
 
 Start the Otello app with : 
 ```java -javaagent:/home/ubuntu/otello/oracle-apm-agent/bootstrap/ApmAgent.jar -jar -Dspring.jmx.enabled=true -Dserver.tomcat.mbeanregistry.enabled=true /home/ubuntu/otello/build/libs/otello.jar```.
