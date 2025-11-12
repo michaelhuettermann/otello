@@ -101,6 +101,10 @@ In this overview, we see some details including the amount of containing spans.
 We can zoom in to show details on the included spans.
 ![spans.png](../pics/spans.png)
 
+The elements are defined as output fields of the [Java agent](https://docs.oracle.com/en-us/iaas/application-performance-monitoring/doc/attributes-java-agent.html).
+The component is the software package, framework, library, or module that generated the associated span, 
+see the [semantic conventions of the OpenTracing specification](https://opentracing.io/specification/conventions/).
+
 We can work on those spans, compare and inspect them.
 
 A graph of our trace with its spans can be displayed, and in our example, it looks like this:
