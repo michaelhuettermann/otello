@@ -105,7 +105,7 @@ We can zoom in to show details on the included spans.
 
 The elements are defined as output fields of the [Java agent](https://docs.oracle.com/en-us/iaas/application-performance-monitoring/doc/attributes-java-agent.html).
 The component is the software package, framework, library, or module that generated the associated span, 
-see the [semantic conventions of the OpenTracing specification](https://opentracing.io/specification/conventions/).
+see the [semantic conventions of the OpenTracing specification](https://opentelemetry.io/docs/concepts/semantic-conventions/).
 
 We can work on those spans, compare and inspect them.
 
