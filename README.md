@@ -93,14 +93,13 @@ In the first shell, inspect the console output:
 ```
 
 The output of JDK 17's *Pattern Matching for switch* in conjunction with *Record Patterns* is reported by the output:
-```Result of computation: A DiceValue!```, and its coding can be found in [RollController.java](RollController.java).
+```Result of computation: A DiceValue!```, and its coding can be found in [RollController.java](app/RollController.java).
 
 For details on the layout, see e. g. [here](https://opentelemetry.io/docs/languages/java/getting-started/).
 
 ## Utilizing OpenTelemetry
 
-
-
+[here](otel/README.md)
 
 ## Utilizing OCI Observability 
 
