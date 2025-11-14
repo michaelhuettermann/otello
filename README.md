@@ -56,6 +56,15 @@ Please note that you must use a JDK with a version greater equal 21 to be able t
 - Clone this Git repository on the OCI instance. Your local clone (the directory *otello*) is the working directory for steps below.
 - Assemble the build, with Gradle. Navigate into the *app* folder, and execute: ```gradle assemble```.
 
+## The Otello application
+
+The example app is a list of files. It contains a 
+Java-based [Spring Boot](https://spring.io/projects/spring-boot) application, with a servlet listening for requests, and processing
+incoming requests by doing some magic logic on it and calling another "service" provided by a second class.
+Those primitives are illustrated in the following representation:
+
+![otell-app.png](pics/otell-app.png)
+
 ## Run&inspect the example
 
 Run the Otello app: ```java -jar .app//build/libs/otello.jar```.
