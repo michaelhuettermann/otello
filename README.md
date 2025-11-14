@@ -99,13 +99,14 @@ For details on the layout, see e. g. [here](https://opentelemetry.io/docs/langua
 
 ## Utilizing OpenTelemetry
 
+Here we discuss OpenTelemetry. To explore concepts of observability, and/or learn about tooling that ships with that standard, this
+is the right place to learn more.
+
 [here](otel/README.md)
 
 ## Utilizing OCI Observability 
 
-### OCI Application Performance Management APM
-
-Observability services can be found in OCI's section *Application Performance Management (APM)*.
+Here we further explore concepts and learn more details on how to leverage OCI for observability.
 
 [here](oci/README.md)
 
