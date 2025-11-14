@@ -22,6 +22,8 @@ The service name is your choice (to later link to it), and you now must referenc
 You can double-check the successful provisioning by watching console output and the newly created folder 
 named oracle-apm-agent inside your OCI instance's working directory.
 
+![apminstaller-maven.png](../pics/apminstaller-maven.png)
+
 ### Provision the agent
 Provision is done once. This step configures the agent locally to serve later on to collect and stream data to OCI.
 
