@@ -107,6 +107,8 @@ The output of JDK 17's *Pattern Matching for switch* in conjunction with *Record
 
 For details on the layout, see e. g. [here](https://opentelemetry.io/docs/languages/java/getting-started/).
 
+This setup is the base for our [zero-code instrumentation](https://opentelemetry.io/docs/zero-code/), as follows next.
+
 ## Utilizing OpenTelemetry
 
 Here we discuss OpenTelemetry. To explore concepts of observability, and/or learn about tooling that ships with that standard, this
