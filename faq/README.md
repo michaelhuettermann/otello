@@ -21,7 +21,7 @@ Answer: Try to tweak your Gradle build, e.g. add ''--build-cache''. If a free ti
 Question: The Gradle build is throwing errors stating that instrumentation is not possible. Help?
 
 Answer: If you have set properties for instrumentation after the initial build, and you again want to run the Gradle build,
-then reset the instrumentation by executing ```source util/export-none```. 
+then reset the instrumentation by executing ```source export-none``` in the *otel* folder. 
 
 <a name="shell"/>
 
