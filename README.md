@@ -58,12 +58,13 @@ Please note that you must use a JDK with a version greater equal 21 to be able t
 
 ## The Otello application
 
-The example app is a list of files. It contains a 
-Java-based [Spring Boot](https://spring.io/projects/spring-boot) application, with a servlet listening for requests, and processing
-incoming requests by doing some magic logic on it and calling another "service" provided by a second class.
-Those primitives are illustrated in the following representation:
+The example app launches an http server. It contains a Java-based [Spring Boot](https://spring.io/projects/spring-boot) application, with a 
+servlet listening for requests, and processing incoming requests by doing some magic logic on it and calling 
+another "service" provided by a second server. Those primitives are illustrated in the following representation:
 
 ![otell-app.png](pics/otell-app.png)
+
+This setup is a customized and updated application loosely based on the snippets provided as part of the [OpenTelemetry documentation](https://opentelemetry.io/docs/languages/java/).
 
 ## Run&inspect the example
 
