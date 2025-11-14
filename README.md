@@ -54,7 +54,7 @@ Please note that you must use a JDK with a version greater equal 21 to be able t
 
 - Install Gradle, e.g. with an appropriate package manager: ```sdk install gradle 8.13```.
 - Clone this Git repository on the OCI instance. Your local clone (the directory *otello*) is the working directory for steps below.
-- Assemble the build, with Gradle. Navigate into the *app* folder, and execute: ```gradle assemble```.
+- Assemble the build, with Gradle. Navigate into the *app* folder, it's the location of our demo application, and execute: ```gradle assemble```.
 
 ## Run&inspect the example
 
