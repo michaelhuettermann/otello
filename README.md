@@ -111,4 +111,4 @@ Observability services can be found in OCI's section *Application Performance Ma
 
 ## FAQ
 
-[here](trouble/README.md)
+[here](faq/README.md)
