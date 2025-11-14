@@ -67,7 +67,7 @@ Those primitives are illustrated in the following representation:
 
 ## Run&inspect the example
 
-Run the Otello app: ```java -jar .app//build/libs/otello.jar```.
+Run the Otello app: ```java -jar .app/build/libs/otello.jar```.
 
 ```
 2025-03-19T10:27:31.564Z  INFO 2306 --- [           main] otel.MyApplication                       : Starting MyApplication using Java 21.0.6 with PID 2306 (/home/ubuntu/otello/build/libs/otello.jar started by root in /home/ubuntu/otello)
