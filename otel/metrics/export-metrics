@@ -1,4 +1,4 @@
-export JAVA_TOOL_OPTIONS="-javaagent:/home/ubuntu/otello/opentelemetry-javaagent.jar" \
+export JAVA_TOOL_OPTIONS="-javaagent:/home/ubuntu/otello/otel/opentelemetry-javaagent.jar" \
   OTEL_TRACES_EXPORTER=none \
   OTEL_METRICS_EXPORTER=logging-otlp \
   OTEL_LOGS_EXPORTER=none \

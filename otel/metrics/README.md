@@ -6,7 +6,7 @@ Open a shell, and check and then apply the config file. Review the file and its 
 Specifically, we customize the system properties for setting the [exporters](https://opentelemetry.io/docs/languages/java/configuration/#properties-exporters), and utilize the *OTEL_METRICS_EXPORTER*.
 
 Run the Otello app:
-```java -jar build/libs/otello.jar```.
+```java -jar ../app/build/libs/otello.jar```.
 
 Open a second shell, and execute a call to the endpoint:
 ```curl localhost:8080/rolldice```

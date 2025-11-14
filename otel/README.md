@@ -1,4 +1,6 @@
-Fetch the Java agent of OpenTelemetry and put it into the Otello directory, on OCI:
+## OpenTelemetry
+
+etch the Java agent of OpenTelemetry and put it into the *otel* directory, on the OCI instance:
 
 ```curl -L -O https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar```.
 
