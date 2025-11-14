@@ -99,21 +99,8 @@ For details on the layout, see e. g. [here](https://opentelemetry.io/docs/langua
 
 ## Utilizing OpenTelemetry
 
-Fetch the Java agent of OpenTelemetry and put it into the Otello directory, on OCI:
 
-```curl -L -O https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar```.
 
-### Trace
-
-[here](trace/README.md)
-
-### Logs
-
-[here](logs/README.md)
-
-### Metrics
-
-[here](metrics/README.md)
 
 ## Utilizing OCI Observability 
 
