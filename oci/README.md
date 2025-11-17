@@ -108,11 +108,11 @@ Oracle APM - log directory is /home/ubuntu/otello/oracle-apm-agent/log/instance-
 Inside OCI console, navigate to the *Trace Explorer*. We see a table with a list of traces, one entry per each call via *curl*. 
 In this overview, we see some details including the amount of containing spans.
 
-<img src="../pics/service-traces.png" alt="Traces" width="600"/>
+<img src="../pics/service-traces.png" alt="Traces" width="800"/>
 
 We can zoom in to show details on the included spans.
 
-<img src="../pics/spans.png" alt="Spans" width="600"/>
+<img src="../pics/spans.png" alt="Spans" width="800"/>
 
 The elements are defined as output fields of the [Java agent](https://docs.oracle.com/en-us/iaas/application-performance-monitoring/doc/attributes-java-agent.html).
 The component is the software package, framework, library, or module that generated the associated span, 
