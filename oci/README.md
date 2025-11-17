@@ -107,10 +107,12 @@ Oracle APM - log directory is /home/ubuntu/otello/oracle-apm-agent/log/instance-
 
 Inside OCI console, navigate to the *Trace Explorer*. We see a table with a list of traces, one entry per each call via *curl*. 
 In this overview, we see some details including the amount of containing spans.
-![service-traces.png](../pics/service-traces.png)
+
+<img src="../pics/service-traces.png alt="Traces" width="600"/>
 
 We can zoom in to show details on the included spans.
-![spans.png](../pics/spans.png)
+
+<img src="../pics/spans.png alt="Spans" width="600"/>
 
 The elements are defined as output fields of the [Java agent](https://docs.oracle.com/en-us/iaas/application-performance-monitoring/doc/attributes-java-agent.html).
 The component is the software package, framework, library, or module that generated the associated span, 
@@ -131,7 +133,7 @@ your *compartment* and the *metric namespace* you are interested in. We are keen
 CPU, thus we choose the *metric name* called *CpuUtilization*. Values of the metric are shown in the user-defined
 time interval.
 
-![metrics-explorer.png](../pics/metrics-explorer.png)
+<img src="../pics/metrics-explorer.png" alt="Metrics explorer" width="600"/>
 
 The query was configured by selecting entries of predefined fields. The result maps to the query that is shown on the left of the UI:
 
