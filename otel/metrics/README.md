@@ -1,7 +1,7 @@
 ## Metrics
 
 Open a shell, and check and then apply the config file. Review the file and its path, and set environmental configuration to focus on tracing based on automatic instrumentation:
-```source metrics/export-metrics```.
+```source export-metrics```.
 
 Specifically, we customize the system properties for setting the [exporters](https://opentelemetry.io/docs/languages/java/configuration/#properties-exporters), and utilize the *OTEL_METRICS_EXPORTER*.
 

@@ -58,7 +58,7 @@ Please note that you must use a JDK with a version greater equal 21 to be able t
 
 ## Run&inspect the example
 
-Run the Otello app. From inside the *app* folder, execute: ```java -jar build/libs/otello.jar```.
+Run the Otello app. Execute: ```java -jar app/build/libs/otello.jar```.
 
 ```
 2025-03-19T10:27:31.564Z  INFO 2306 --- [           main] otel.MyApplication                       : Starting MyApplication using Java 21.0.6 with PID 2306 (/home/ubuntu/otello/build/libs/otello.jar started by root in /home/ubuntu/otello)

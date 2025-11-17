@@ -13,7 +13,12 @@ following step of setting up an *APM agent*.
 
 #### APM agent
 Navigate into the freshly created domain and move to *Install APM agent*. In our case, we seek to use a Java agent that runs on our *OCI instance*.
-Follow the steps to download, provision and utilize the agent.
+Follow the steps to download, provision and utilize the agent. In our case:
+
+```
+curl https://repo1.maven.org/maven2/com/oracle/apm/agent/java/apm-java-agent-installer/1.17.1.2/apm-java-agent-installer-1.17.1.2.jar -o /home/ubuntu/otello/apm-java-agent-installer-1.17.1.2.jar
+```
+
 When you download the agent from Maven central as documented, please note, the most recent agent version might be newer than the version that is 
 mentioned as part of the detailed how-to on that web page inside OCI. Since not all versions are archived on Maven central, navigate the target directory and check the available versions. 
 Once the agent (jar) is downloaded into the working directory, provision it with the parameter of data key, service name
@@ -28,7 +33,7 @@ named oracle-apm-agent inside your OCI instance's working directory.
 Provision is done once. This step configures the agent locally to serve later on to collect and stream data to OCI.
 
 Start the Otello app with : 
-```java -javaagent:/home/ubuntu/otello/oracle-apm-agent/bootstrap/ApmAgent.jar -jar -Dspring.jmx.enabled=true -Dserver.tomcat.mbeanregistry.enabled=true /home/ubuntu/otello/build/libs/otello.jar```.
+```java -javaagent:/home/ubuntu/otello/oracle-apm-agent/bootstrap/ApmAgent.jar -jar -Dspring.jmx.enabled=true -Dserver.tomcat.mbeanregistry.enabled=true /home/ubuntu/otello/app/build/libs/otello.jar```.
 
 Watch the output:
 ```
