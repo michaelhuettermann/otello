@@ -13,7 +13,7 @@ Check the box that you want to create the domain as to be free. Once the domain 
 
 The auto-created upload endpoint and data keys must be used in the following step of setting up an *APM agent*, specifically a Java agent.
 
-<img src="../pics/install-apm-agent.png" alt="Java agent" width="400"/>
+<img src="../pics/install-apm-agent.png" alt="Java agent" width="600"/>
 
 #### APM agent
 Navigate into the freshly created domain and move to *Install APM agent*. In our case, we seek to use a Java agent that runs on our *OCI instance*.
