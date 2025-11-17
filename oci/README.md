@@ -120,7 +120,7 @@ We can work on those spans, compare and inspect them.
 
 A graph of our trace with its spans can be displayed, and in our example, it looks like this:
 
-<img src="../pics/spans-graphic.png" alt="Spans graph" width="600"/>
+<img src="../pics/spans-graphic.png" alt="Spans graph" width="400"/>
 
 This topology contains the units utilized for the spans.
 
