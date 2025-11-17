@@ -9,11 +9,11 @@ First, in OCI under the section *Observability & Management*, navigate to the *A
 an *APM domain*. An APM domain is an OCI resource that contains systems being monitored by OCI APM. As necessary steps, choose a name for your domain, and the compartment the APM domain is located in. 
 Check the box that you want to create the domain as to be free. Once the domain is created, it shows up in the list of APM domains:
 
-![apm-domain.png](../pics/apm-domain.png)
+<img src="../pics/apm-domain.png" alt="APM domain" width="400"/>
 
 The auto-created upload endpoint and data keys must be used in the following step of setting up an *APM agent*, specifically a Java agent.
 
-![install-apm-agent.png](../pics/install-apm-agent.png)
+<img src="../pics/install-apm-agent.png" alt="Java agent" width="400"/>
 
 #### APM agent
 Navigate into the freshly created domain and move to *Install APM agent*. In our case, we seek to use a Java agent that runs on our *OCI instance*.
@@ -31,7 +31,7 @@ The service name is your choice (to later link to it), and you now must referenc
 You can double-check the successful provisioning by watching console output and the newly created folder 
 named oracle-apm-agent inside your OCI instance's working directory.
 
-![apminstaller-maven.png](../pics/apminstaller-maven.png)
+<img src="../pics/apminstaller-maven.png" alt="Maven central" width="400"/>
 
 ### Provision the agent
 Provision is done once. This step configures the agent locally to serve later on to collect and stream data to OCI.
@@ -120,7 +120,7 @@ We can work on those spans, compare and inspect them.
 
 A graph of our trace with its spans can be displayed, and in our example, it looks like this:
 
-![spans-graphic.png](../pics/spans-graphic.png)
+<img src="../pics/spans-graphic.png" alt="Spans graph" width="400"/>
 
 This topology contains the units utilized for the spans.
 
