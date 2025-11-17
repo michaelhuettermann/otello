@@ -133,7 +133,7 @@ your *compartment* and the *metric namespace* you are interested in. We are keen
 CPU, thus we choose the *metric name* called *CpuUtilization*. Values of the metric are shown in the user-defined
 time interval.
 
-<img src="../pics/metrics-explorer.png" alt="Metrics explorer" width="600"/>
+<img src="../pics/metrics-explorer.png" alt="Metrics explorer" width="800"/>
 
 The query was configured by selecting entries of predefined fields. The result maps to the query that is shown on the left of the UI:
 
