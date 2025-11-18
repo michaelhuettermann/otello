@@ -1,4 +1,4 @@
-## OCI Observability & Management: APM
+## OCI Observability & Management: APM, Monitoring, Metrics
 
 In OCI, advanced observability features are located in the Application Performance Management section, *APM* in short.
 
@@ -128,7 +128,7 @@ This topology contains the units utilized for the spans.
 
 ## Observability & Management: Monitoring
 
-Navigating to *Observability & Management''s section *Monitoring*, a *Metric Explorer* is available. Select
+Navigating to *Observability & Management*'s section *Monitoring*, a *Metric Explorer* is available. Select
 your *compartment* and the *metric namespace* you are interested in (here: *oci_computeagent*). We are keen to inspect the utilization of the
 CPU, thus we choose the *metric name* called *CpuUtilization*. Values of the metric are shown in the user-defined
 time interval.
