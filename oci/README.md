@@ -1,4 +1,4 @@
-## OCI Observability & Management: Monitoring, Metrics, Tracing
+## OCI Observability & Management: Tracing
 
 In OCI, advanced observability features are located in the Application Performance Management section, *APM* in short.
 
@@ -139,7 +139,7 @@ The query was configured by selecting entries of predefined fields. The result m
 
 ```CpuUtilization[1m].mean()```
 
-## Apdex: Application Performance Index
+## OCI Observability & Management Metrics: Application Performance Index (Apdex)
 
 OCI integrates with the open standard Apdex to map measures to user satisfaction.
 The spec of this standard can be found [here](https://www.apdex.org/wp-content/uploads/2020/09/ApdexTechnicalSpecificationV11_000.pdf) and a description on the [Apdex user group site](https://www.apdex.org).
