@@ -1,4 +1,4 @@
-## OCI Observability & Management: APM, Monitoring, Metrics
+## OCI Observability & Management: Monitoring, Metrics, Tracing
 
 In OCI, advanced observability features are located in the Application Performance Management section, *APM* in short.
 
@@ -141,8 +141,8 @@ The query was configured by selecting entries of predefined fields. The result m
 
 ## Apdex: Application Performance Index
 
-OCI integrates with the open standard to map measures to user satisfaction, Apdex.
-The spec of this standard can be found [here](https://www.apdex.org/wp-content/uploads/2020/09/ApdexTechnicalSpecificationV11_000.pdf) and a description [Apdex user group site](https://www.apdex.org).
-On OCI, further information on how to integrate are [here](https://docs.oracle.com/en-us/iaas/application-performance-monitoring/doc/configure-apdex-thresholds.html).
+OCI integrates with the open standard Apdex to map measures to user satisfaction.
+The spec of this standard can be found [here](https://www.apdex.org/wp-content/uploads/2020/09/ApdexTechnicalSpecificationV11_000.pdf) and a description on the [Apdex user group site](https://www.apdex.org).
+On OCI, further information on how to integrate are located [here](https://docs.oracle.com/en-us/iaas/application-performance-monitoring/doc/configure-apdex-thresholds.html).
 
 <img src="../pics/apdex-thresholds.png" alt="Apdex, on OCI" width="600"/>
