@@ -80,9 +80,9 @@ Oracle APM Agent: Running with Bootstrap Discovery: false
 
 The agent was provisioned.
 
-## Leverage APM
+### Leverage APM
 
-### Trigger some traffic
+#### Trigger some traffic
 Open a second shell, and execute a call to the endpoint:
 
 ```curl localhost:8080/rolldice```
@@ -103,7 +103,7 @@ Oracle APM Agent: Redefining java.logging module to allow "opens" access on java
 Oracle APM - log directory is /home/ubuntu/otello/oracle-apm-agent/log/instance-20241121-1211_8080
 ```
 
-### Inspect reports in OCI
+#### Inspect reports in OCI
 
 Inside OCI console, navigate to the *Trace Explorer*. We see a table with a list of traces, one entry per each call via *curl*. 
 In this overview, we see some details including the amount of containing spans.
