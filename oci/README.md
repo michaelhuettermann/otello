@@ -1,14 +1,15 @@
 ## OCI Observability
 
 OCI provides different advanced observability features for tracing, logs and metrics.
-Following, we explore a couple of them.
-
-Depending on which focus you have, trace, logs, metrics, zoom in to the respective folder.
+Following, we explore a couple of them. Depending on which focus you have, trace, logs, metrics, 
+zoom in to the respective folder. As a prerequisite, we set up an APM Domain, which is OCI's concept 
+to define systems being monitored by Application Performance Monitoring (APM).
 
 ### APM Domain, and Agent
 
 Tracing is largely connected to OCI's Application Performance Management section, *APM* in short. Next,
-we set up the required resources and utilize them for tracing purposes based on our Otello app.
+we set up the required resources and utilize them for tracing purposes based on our Otello app. As
+an entry point at OCI, read the comprehensive manual [here](https://docs.oracle.com/en-us/iaas/application-performance-monitoring/doc/create-apm-domain.html).
 
 #### Create and configure resources
 
