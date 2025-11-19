@@ -1,8 +1,14 @@
+# OCI Observability
+
+OCI provides different advanced observability features for tracing, monitoring and metrics. Following, we
+explore a couple of them.
+
 ## OCI Observability & Management: Tracing
 
-### Create and configure resources
+Tracing is largely connected to OCI's Application Performance Management section, *APM* in short. Next,
+we set up the required resources and utilize them for tracing purposes based on our Otello app.
 
-In OCI, advanced observability features are located in the Application Performance Management section, *APM* in short.
+### Create and configure resources
 
 #### APM domain
 First, in OCI under the section *Observability & Management*, navigate to the *APM* section *Administration* and create
