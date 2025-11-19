@@ -5,7 +5,7 @@ Following, we explore a couple of them.
 
 Depending on which focus you have, trace, logs, metrics, zoom in to the respective folder.
 
-### APM Agent
+### APM Domain, and Agent
 
 Tracing is largely connected to OCI's Application Performance Management section, *APM* in short. Next,
 we set up the required resources and utilize them for tracing purposes based on our Otello app.
@@ -88,9 +88,8 @@ Oracle APM Agent: Running with Bootstrap Discovery: false
 
 The agent was provisioned.
 
-#### Leverage APM
+#### Leverage APM: Trigger Traffic
 
-#### Trigger some traffic
 Open a second shell, and execute a call to the endpoint:
 
 ```curl localhost:8080/rolldice```
