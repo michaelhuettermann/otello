@@ -11,7 +11,7 @@ Depending on which focus you have, trace, logs, metrics, zoom in to the respecti
 
 ### Logs
 
-[here](monitoring/README.md)
+[here](logs/README.md)
 
 ### Metrics
 
