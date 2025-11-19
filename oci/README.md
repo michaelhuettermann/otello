@@ -1,6 +1,6 @@
 ## OCI Observability
 
-OCI provides different advanced observability features for tracing, monitoring and metrics. 
+OCI provides different advanced observability features for tracing, logs and metrics. 
 Following, we explore a couple of them.
 
 Depending on which focus you have, trace, logs, metrics, zoom in to the respective folder.
