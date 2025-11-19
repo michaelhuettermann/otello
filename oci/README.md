@@ -1,8 +1,8 @@
 ## OCI Observability & Management: Tracing
 
-In OCI, advanced observability features are located in the Application Performance Management section, *APM* in short.
-
 ### Create and configure resources
+
+In OCI, advanced observability features are located in the Application Performance Management section, *APM* in short.
 
 #### APM domain
 First, in OCI under the section *Observability & Management*, navigate to the *APM* section *Administration* and create
