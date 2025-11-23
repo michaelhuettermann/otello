@@ -1,5 +1,8 @@
 # The Otello showcase
 
+> In addition to a typical web site documentation, this project is provided as blog post, to offer 
+> logically sliced chunks of content and alternative entry points.
+
 ## Motivation
 This lab is used as:
 - A community-driven, self-contained starter package for students and beginners to learn about telemetry.
