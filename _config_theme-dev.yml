@@ -1,0 +1,22 @@
+title: Otello
+author:
+  name: michaelhuettermann
+  email: michael@huettermann.net
+
+description: >
+  This is a description.
+
+theme: minima
+
+minima:
+  skin: classic
+
+  nav_pages:
+    - about.md
+
+  show_excerpts: false
+
+  social_links:
+    - title: Home
+      icon: github
+      url: "http://huettermann.net"
