@@ -1,5 +1,7 @@
 ## Metrics
 
+This entry point covers OpenTelemetry Metrics on OCI.
+
 Open a shell, and check and then apply the config file. Review the file and its path, and set environmental configuration to focus on tracing based on automatic instrumentation:
 ```source export-metrics```.
 

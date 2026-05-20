@@ -1,5 +1,7 @@
 ## OpenTelemetry
 
+This entry point covers OpenTelemetry on OCI.
+
 Fetch the Java agent of OpenTelemetry and put it into the *otel* directory, on the OCI instance. If you are in that directory, execute
 
 ```curl -L -O https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar```.
