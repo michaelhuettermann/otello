@@ -1,5 +1,7 @@
 ## OCI Observability & Management: Tracing
 
+This entry point covers OCI Observability and Traces.
+
 ### Inspect reports in OCI
 
 Inside OCI console, navigate to the *Trace Explorer*. We see a table with a list of traces, one entry per each call via *curl*. 

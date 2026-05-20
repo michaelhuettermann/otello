@@ -1,5 +1,7 @@
 ## OCI Observability & Management Metrics
 
+This entry point covers OCI Observability and Metrics.
+
 ### Application Performance Index (Apdex)
 
 OCI integrates with the open standard Apdex to map measures to user satisfaction.
