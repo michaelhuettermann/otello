@@ -1,4 +1,8 @@
-## The Otello application
+## The Otello App
+
+This entry point covers the Otello App which is running on OCI.
+
+### Application setup
 
 The example app launches a http server as an entry point for our requests. 
 It contains a Java-based [Spring Boot](https://spring.io/projects/spring-boot) application, with a
