@@ -10,6 +10,7 @@ Each blog post is an entry point to single aspects of the overall Otello showcas
 - OCI Otel and Metrics: [here](../otel/metrics/README.md)
 - OCI Otel and Trace: [here](../otel/trace/README.md)
 - OCI Observability: [here](../oci/README.md)
-- OCI Observablity and Metrics: [here](../oci/metrics/README.md)
-- OCI Observablity and Trace: [here](../oci/trace/README.md)
+- OCI Observability and Metrics: [here](../oci/metrics/README.md)
+- OCI Observability and Trace: [here](../oci/trace/README.md)
+- OCI Observability and Logs: [here](../oci/logs/README.md)
 
