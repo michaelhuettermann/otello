@@ -1,6 +1,6 @@
 ## The Otello App
 
-This entry point covers the Otello App which is running on OCI.
+This entry point covers the design of the Otello App which is running on OCI.
 
 ### Application setup
 
