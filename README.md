@@ -3,7 +3,7 @@
 > In addition to a typical web site documentation, this project is provided as a list of blog post, to 
 > continuously offer logically sliced chunks of content and alternative entry points [here](blog/README.md).
 
-This entry point introduces in *Otello*.
+This entry point introduces *Otello*.
 
 ## Motivation
 This lab is used as:
