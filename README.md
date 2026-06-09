@@ -1,7 +1,7 @@
 # The Otello showcase
 
-> In addition to the form of a typical website documentation, this project provides a list of blog post, to 
-> continuously offer logically sliced chunks of nuanced content and alternative entry points [here](blog/README.md).
+> In addition to the form of a typical website documentation, this project provides a frequently updated list of blog posts, to 
+> continuously offer logically sliced chunks of nuanced and more content with alternative entry points [here](blog/README.md).
 
 This entry point introduces *Otello*.
 
@@ -61,8 +61,8 @@ Please note that you must use a JDK with a version greater equal 21 to be able t
 
 ## Set up the baseline
 
-- Install Gradle, e.g. with an appropriate package manager: ```sdk install gradle 8.13```.
-- Clone this Git repository on the OCI instance. Your local clone (the directory *otello*) is the working directory for steps below.
+- Install [Gradle](https://gradle.org), e.g. with an appropriate package manager: ```sdk install gradle 8.13```.
+- Clone this [Git](https://git-scm.com) repository on the OCI instance. Your local clone (the directory *otello*) is the working directory for steps below.
 - Assemble the build, with Gradle. Navigate into the *app* folder, it's the location of our demo application, and execute: ```gradle assemble```.
 
 ## Run&inspect the example
