@@ -1,6 +1,6 @@
 ## JDK 21: Modern language features
 
-This entry point covers example Java application features with JDK 21.
+This entry point covers example Java application features available with JDK 21.
 
 As coded in [RollController.java](RollController.java), in our sample demo, the *pattern matching for switch* is blended with the *record pattern* language feature.
 
@@ -20,6 +20,8 @@ It was refined by following JEPs, e.g. [JEP 441](https://openjdk.org/jeps/441) (
   }
 ```
 
+Pattern matching for switch allows switch statements to evaluate objects instead of constants or primitive values. This new features results in handy code that is more readable. With JDK 21, there is no need to utilize *instanceof* constructs.
+
 ### Record pattern
 The *Record Patterns* relates to the language feature of pattern matching. It extends it to destructive instances of record classes and adds nested patterns, see [JEP 440](https://openjdk.org/jeps/440) (JDK 21). 
 
@@ -37,3 +39,18 @@ The *Record Patterns* relates to the language feature of pattern matching. It ex
     }
     ...
 ```
+
+Record patterns enable a simple way to extract data from records.
+Records were added in JDK 16 (see [[JEP 395]](https://openjdk.org/jeps/395)). 
+In our case, our record looks as follows:
+
+```
+private record DiceValue(Integer dv) {};
+```
+
+The record is created with the rolled dice _int_. In our code, we easily deconstructs the record's final field by:
+
+```
+logger.info("Operate on DiceValue: "+ Mydv.dv);
+```
+
