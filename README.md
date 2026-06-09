@@ -38,7 +38,7 @@ Once the instance is created, you can [connect to it](https://docs.oracle.com/en
 
 ### Oracle JDK
 
-In the following, for demo purposes and to keep things simple, we perform all steps as *root* user.
+In the following, for demo purposes and to keep things simple, we perform all steps as *root* user. Change to root with ```sudo -i```.
 
 Download and install the desired version of [Oracle JDK](https://www.oracle.com/java/technologies/downloads/). Consult the specific documentation at *docs.oracle.com* for detailed guidance. For example, for a *64-Bit Oracle JDK 21 for a Linux system*, look at the detailed documentation to [install Java](https://www.oracle.com/de/java/technologies/downloads/#java21). Example:
 

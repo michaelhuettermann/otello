@@ -14,6 +14,10 @@ repositories {
   mavenCentral()
 }
 
+base {
+  archivesName = "otello"
+}
+
 dependencies {
   implementation("org.springframework.boot:spring-boot-starter-web")
   implementation("org.springframework.boot:spring-boot-starter-webflux:2.6.1")
