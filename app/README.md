@@ -11,4 +11,8 @@ another "service" provided by a second server. Those primitives are illustrated 
 
 <img src="../pics/otello-app.png" alt="Otello app" width="800"/>
 
+The design maps to code as follows. As part of the Spring Boot application 
+[MyApplication.java](MyApplication.java), the server-side entry point is [RollController.java](RollController.java).
+It in turn operates a client for a call to a server-side [GreetingController.java](GreetingController.java).
+
 This setup is a customized and updated application loosely based on the snippets provided as part of the [OpenTelemetry documentation](https://opentelemetry.io/docs/languages/java/).
