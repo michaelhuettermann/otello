@@ -1,4 +1,4 @@
-## Tracing
+## OpenTelemetry and Tracing
 
 This entry point covers OpenTelemetry Tracing on OCI.
 

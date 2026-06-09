@@ -1,4 +1,4 @@
-## Logging
+## OpenTelemetry and Logging
 
 This entry point covers OpenTelemetry Logging on OCI.
 

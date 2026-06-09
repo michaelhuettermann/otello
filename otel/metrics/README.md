@@ -1,4 +1,4 @@
-## Metrics
+## OpenTelemetry and Metrics
 
 This entry point covers OpenTelemetry Metrics on OCI.
 
