@@ -41,7 +41,7 @@ The *Record Patterns* relates to the language feature of pattern matching. It ex
 ```
 
 Record patterns enable a simple way to extract data from records.
-Records were added in JDK 16 (see [[JEP 395]](https://openjdk.org/jeps/395)). 
+Records were added in JDK 16 (see [JEP 395](https://openjdk.org/jeps/395)). 
 In our case, our record looks as follows:
 
 ```
@@ -54,3 +54,6 @@ The record is created with the rolled dice _int_. In our code, we easily deconst
 logger.info("Operate on DiceValue: "+ Mydv.dv);
 ```
 
+Our example code includes *pattern matching for switch* and *record pattern*. It shows how these new modern language features can be leveraged 
+to significantly improve the code.
+f
