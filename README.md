@@ -24,7 +24,7 @@ The Otello project is an ongoing initiative. It is rooted on three pillars to sp
   - How to generate and examine logs from instrumented Java code.
   - How to generate and examine traces from instrumented Java code.
   - How to generate and examine metrics from instrumented Java code.
-- Latest features of most recent Java release versions, e.g. 
+- Latest features of most recent Java release versions, as part of a [Java application](app/README.md), e.g. 
   - *Pattern Matching for switch*. Originally introduced as preview with JDK 17 and proposed via [JEP 406](https://openjdk.org/jeps/406), this feature was subsequently refined by following JEPs, e.g. [JEP 441](https://openjdk.org/jeps/441) (JDK 21). 
   - *Record Patterns*. Relating to the language feature of pattern matching, this feature extends pattern matching to destructive instances of record classes and adds nested patterns, see [JEP 440](https://openjdk.org/jeps/440) (JDK 21). 
 
