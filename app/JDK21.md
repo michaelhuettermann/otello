@@ -48,7 +48,7 @@ In our case, our record looks as follows:
 private record DiceValue(Integer dv) {};
 ```
 
-The record is created with the rolled dice _int_. In our code, we easily deconstructs the record's final field by:
+The record is created with the rolled dice _int_. In our code, we easily deconstruct the record's final field by:
 
 ```
 logger.info("Operate on DiceValue: "+ Mydv.dv);
