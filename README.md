@@ -1,7 +1,7 @@
 # The Otello showcase
 
 > In addition to a typical web site documentation, this project is provided as a list of blog post, to 
-> continuously offer logically sliced chunks of content and alternative entry points [here](blog/README.md).
+> continuously offer logically sliced chunks of nuanced content and alternative entry points [here](blog/README.md).
 
 This entry point introduces *Otello*.
 
