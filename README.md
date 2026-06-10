@@ -61,8 +61,9 @@ Please note that you must use a JDK with a version greater equal 21 to be able t
 
 ## Set up the baseline
 
+- Install [Git](https://github.com/git-guides/install-git).
+- Clone this [Git repository](https://git-scm.com) on the OCI instance. Your local clone (the directory *otello*) is the working directory for steps below.
 - Install [Gradle](https://gradle.org), e.g. with an appropriate package manager: ```sdk install gradle 8.13```.
-- Clone this [Git](https://git-scm.com) repository on the OCI instance. Your local clone (the directory *otello*) is the working directory for steps below.
 - Assemble the build, with Gradle. Navigate into the *app* folder, it's the location of our demo application, and execute: ```gradle assemble```.
 
 ## Run&inspect the example

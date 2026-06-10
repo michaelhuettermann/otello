@@ -56,4 +56,3 @@ logger.info("Operate on DiceValue: "+ Mydv.dv);
 
 Our example code includes *pattern matching for switch* and *record pattern*. It shows how these new modern language features can be leveraged 
 to significantly improve the code.
-f
