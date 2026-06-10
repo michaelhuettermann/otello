@@ -40,7 +40,7 @@ This element covers the smoke test after installation. We explore the applicatio
 
 [here](run/README.md)
 
-## Utilizing OpenTelemetry
+## Utilizing OpenTelemetry on OCI
 
 Here we discuss OpenTelemetry. To explore concepts of observability, and/or learn about tooling that ships with that standard, this
 is the right place to learn more.
