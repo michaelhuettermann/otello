@@ -40,6 +40,12 @@ This element covers the smoke test after installation. We explore the applicatio
 
 [here](run/README.md)
 
+## The Otello application
+
+Here we learn about the Otello application and how its design maps to classes.
+
+[here](app/README.md)
+
 ## Leveraging OpenTelemetry on OCI
 
 Here we discuss OpenTelemetry. To explore concepts of observability, and/or learn about tooling that ships with that standard, this
