@@ -53,6 +53,12 @@ Here we further explore concepts and learn more details on how to leverage OCI f
 
 [here](oci/README.md)
 
+## Util
+
+The utility folder contains convenience scripts as part of Otello.
+
+[here](util/README.md)
+
 ## FAQ
 
 [here](faq/README.md)

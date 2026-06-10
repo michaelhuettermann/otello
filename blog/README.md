@@ -16,4 +16,6 @@ Each blog post is an entry point to single aspects of the overall Otello showcas
 - OCI Observability and Metrics: [here](../oci/metrics/README.md). This content details OCI observability metrics.
 - OCI Observability and Trace: [here](../oci/trace/README.md). This content details OCI observability traces.
 - OCI Observability and Logs: [here](../oci/logs/README.md). Here we explore some log topics related to OCI observability.
+- Utilities, to work with Otello, on OCI: [here](../util/README.md).
+- FAQ: [here](../faq/README.md).
 
