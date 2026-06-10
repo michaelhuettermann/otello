@@ -4,6 +4,8 @@ This overview presents an array of blog posts. Content is frequently added.
 Each blog post is an entry point to single aspects of the overall Otello showcase.
 
 - The Otello Showcase: [here](../README.md). This element introduces Otello.
+- Otello installation on OCI: [here](../install/README.md). This section discusses the installation of Otello.
+- Otello run&inspect: [here](../run/README.md). In this part we check whether the installation was successful. 
 - The Otello App: [here](../app/README.md). Here we explore the Java application that runs on OCI.
 - JDK21: [here](../app/JDK21.md). This chunk discusses modern language features introduced with Java 21.
 - OCI Otel: [here](../otel/README.md). Here I introduce into the use of OpenTelemetry on OCI.
